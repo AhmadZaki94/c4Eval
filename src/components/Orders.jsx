@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 export const Orders = () => {
     //  Get all data when admin logs in and populate it
     // store it in redux
-    
+    const [data, setData] = useState({
+        problem: "",
+        client_name: "",
+        status: "",
+        cost: "",
+        accept: ""
+    })
   
     return (
       <div>
